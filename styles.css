@@ -4,9 +4,10 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
-header {
+header, footer {
     background-color: #333;
     color: #fff;
     text-align: center;
@@ -26,17 +27,16 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: #fff;
-    transition: color 0.3s; /* Smooth color transition */
+    transition: color 0.3s;
 
-    /* Add background color change on hover */
     background-color: transparent;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #333; /* Change text color on hover */
-    background-color: #fff; /* Change background color on hover */
+    color: #333;
+    background-color: #fff;
 }
 
 .hero-content {
@@ -54,4 +54,10 @@ nav ul li a:hover {
 
 .btn:hover {
     background-color: #555;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
