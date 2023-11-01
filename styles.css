@@ -7,11 +7,15 @@ body {
     position: relative;
 }
 
-header{
+header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px 0; /* Increase the top and bottom padding for better alignment */
+}
+
+.nav-links {
+    display: block; /* Initially display the navigation links as blocks */
 }
 
 nav ul {
@@ -68,7 +72,7 @@ footer {
 }
 
 .mobile-menu {
-    display: none; /* Initially hide the mobile menu icon on larger screens */
+    display: none;
     cursor: pointer;
 }
 
@@ -80,7 +84,6 @@ footer {
     transition: 0.4s;
 }
 
-/* Display the mobile menu icon and adjust the header for smaller screens */
 @media (max-width: 768px) {
     .mobile-menu {
         display: block;
@@ -92,16 +95,14 @@ footer {
 
     header {
         text-align: left;
+        padding: 10px 0; /* Adjust the header padding for mobile screens */
     }
 
-    nav ul {
-        display: none;
+    .nav-links {
+        display: none; /* Initially hide the navigation links on smaller screens */
     }
 
-    .mobile-menu.active + nav ul {
-        display: block;
-    }
-
+    /* Styles for the mobile menu icon when active (clicked) */
     .mobile-menu.active .bar:first-child {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
