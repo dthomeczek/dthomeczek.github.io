@@ -11,11 +11,11 @@ header {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0; /* Increase the top and bottom padding for better alignment */
+    padding: 10px 0;
 }
 
 .nav-links {
-    display: block; /* Initially display the navigation links as blocks */
+    display: block;
 }
 
 nav ul {
@@ -85,21 +85,17 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .mobile-menu {
-        display: block;
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        z-index: 1;
+    .desktop-nav {
+        display: none;
     }
 
     header {
         text-align: left;
-        padding: 10px 0; /* Adjust the header padding for mobile screens */
+        padding: 10px 0;
     }
 
     .nav-links {
-        display: none; /* Initially hide the navigation links on smaller screens */
+        display: none;
     }
 
     /* Styles for the mobile menu icon when active (clicked) */
